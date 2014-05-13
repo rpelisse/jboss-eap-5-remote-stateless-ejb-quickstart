@@ -6,7 +6,7 @@ Technologies: EJB
 Summary: Demonstrates how to remotely invoked a Stateless EJB
 Target Product: EAP
 Product Versions: EAP 5.2.0
-Source: <https://github.com/TODO>
+Source: <https://github.com/rpelisse/jboss-eap-5-remote-stateless-ejb-quickstart>
 
 What is it?
 -----------
