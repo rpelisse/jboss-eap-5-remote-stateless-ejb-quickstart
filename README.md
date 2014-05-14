@@ -51,7 +51,13 @@ Run the quickstart
 
 5 . Run the example application in its directory:
 
-        $ mvn exec:java
+       $ mvn exec:java
+
+6. Run the example using JNDI over HTTP features:
+
+       $ mvn -DuseJndiOverHttp=true exec:java
+
+Note: all other configuration changes for the client (server host, port, ...) requires to edit the Java client file and modify the code.
 
 Debug the Application
 ---------------------

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss
+  xmlns="http://www.jboss.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.jboss.com/xml/ns/javaee
+  http://www.jboss.com/j2ee/schema/jboss_5_0.xsd"
+  version="3.0">
+  <enterprise-beans>
+    <session>
+      <ejb-name>Hello</ejb-name>
+      <remote-binding>
+        <jndi-name>Hello/http</jndi-name>
+        <client-bind-url>
+          http://${jboss.bind.address}:8080/unified-invoker/Ejb3ServerInvokerServlet/?return-exception=true
+        </client-bind-url>
+      </remote-binding>
+    </session>
+  </enterprise-beans>
+</jboss>
