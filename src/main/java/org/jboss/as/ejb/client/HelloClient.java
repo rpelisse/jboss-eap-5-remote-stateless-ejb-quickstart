@@ -13,7 +13,10 @@ public class HelloClient {
         Object obj = ctx.lookup("/Hello/remote");
 
         Hello ejbObject = (Hello) obj;
+        System.out.println(SEPARATOR);
         System.out.println(ejbObject.sayHello());
+        System.out.println(SEPARATOR);
+
     }
 
     protected static InitialContext getInitialContext() throws NamingException {
@@ -22,4 +25,6 @@ public class HelloClient {
         env.put("java.naming.factory.initial", "org.jnp.interfaces.NamingContextFactory");
         return new InitialContext(env);
     }
+
+    private static final String SEPARATOR = "===============================================";
 }
