@@ -8,12 +8,13 @@ import org.jboss.as.ejb.Hello;
 
 public class HelloClient {
     public static void main(String[] args) throws Exception {
+        System.out.println(SEPARATOR);
         InitialContext ctx = getInitialContext();
 
         Object obj = ctx.lookup("/Hello/remote");
 
         Hello ejbObject = (Hello) obj;
-        System.out.println(SEPARATOR);
+
         System.out.println(ejbObject.sayHello());
         System.out.println(SEPARATOR);
 
