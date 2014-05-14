@@ -48,7 +48,7 @@
         <maven.compiler.source>1.6</maven.compiler.source>
 
         <jboss.home>${env.JBOSS_HOME}</jboss.home>
-        <quickstart.main.class>jboss.example.ejb.HelloClient</quickstart.main.class>
+        <quickstart.main.class>org.jboss.as.ejb.client.HelloClient</quickstart.main.class>
     </properties>
 
 
