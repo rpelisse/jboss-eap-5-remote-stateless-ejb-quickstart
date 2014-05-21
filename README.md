@@ -57,6 +57,8 @@ Run the quickstart
 
        $ mvn -DuseJndiOverHttp=true exec:java
 
+*Warning: In order to configure properly JBoss EAP 4 or 5, to enable JNDI over HTTP, please follow this article on [EJB3 via HTTP](https://access.redhat.com/site/solutions/18622) from [Red Hat support portal](https://access.redhat.com/).*
+
 Note: all other configuration changes for the client (server host, port, ...) requires to edit the Java client file and modify the code.
 
 Debug the Application
